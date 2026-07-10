@@ -7,6 +7,14 @@
     {
       "body": "hello",
       "posted_at": "2026-03-12T15:55:21.864952+00:00"
+    },
+    {
+      "body": "hello",
+      "posted_at": "2026-07-10T11:02:13.769427+00:00"
+    },
+    {
+      "body": "## E2E Tests Generated \u2014 Add Observability (#3)\n\nGenerated **10 Playwright E2E tests** in `agent_tests/e2e/generated.spec.ts`.\n\n| Test ID | Title |\n|---------|-------|\n| TC-01 | logs tool call name and inputs in the tool calls table |\n| TC-02 | logs tool call outputs alongside inputs |\n| TC-03 | records per-tool-call latency in the table |\n| TC-04 | exposes tool-call records in a structured, machine-parseable table |\n| TC-05 | surfaces tool arguments and results side-by-side (OTEL span attributes) |\n| TC-06 | renders aggregate latency stats spanning the full agent run |\n| TC-07 | does not alter dashboard behavior when filters are exercised |\n| TC-08 | renders the tool calls table so error rows can be surfaced |\n| TC-09 | renders the dashboard shell so startup and shutdown events have a home |\n| TC-10 | filters tool calls by name and clears cleanly |\n\n**Coverage:** Tool name + inputs logged (TC-01), outputs logged (TC-02), per-call latency (TC-03), structured/machine-parseable format (TC-04), args + results as OTEL span attributes (TC-05), continuous end-to-end trace via aggregate stats (TC-06), observability parity \u2014 no behavior change (TC-07), error capture in trace (TC-08), startup + shutdown spans (TC-09), and filter round-trip on the trace query surface (TC-10).",
+      "posted_at": "2026-07-10T11:43:40.491252+00:00"
     }
   ]
 }

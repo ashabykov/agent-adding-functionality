@@ -56,5 +56,11 @@
     <button id="apply-filter" data-testid="apply-filter">Apply</button>
     <button id="clear-filter" data-testid="clear-filter">Clear</button>
   </section>
+
+  <script>
+    document.getElementById('clear-filter').addEventListener('click', () => {
+      document.getElementById('tool-filter').value = '';
+    });
+  </script>
 </body>
 </html>
