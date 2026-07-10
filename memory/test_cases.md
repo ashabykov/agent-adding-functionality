@@ -8,7 +8,7 @@ type: project
 
 ## Rules
 
-The agent must never generate a test whose ID (e.g. `TC-01`) already appears in the table below. Before invoking the `e2e_test_generator` subagent, read this file, collect all existing test IDs for the target ticket, and pass them to the subagent as `existing_test_ids`. The subagent must skip any ID already recorded and continue numbering from the next free integer.
+**No duplicate test cases.** The agent must never generate a test whose ID (e.g. `TC-01`) already appears in the table below, and must never regenerate a test case that is semantically equivalent to one already recorded. Before invoking the `e2e_test_generator` subagent, read this file, collect all existing test IDs for the target ticket, and pass them to the subagent as `existing_test_ids`. The subagent must skip any ID already recorded and continue numbering from the next free integer.
 
 ## Ticket #3 — Add Observability
 
